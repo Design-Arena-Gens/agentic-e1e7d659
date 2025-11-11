@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-navy: #0A1833;
+  --color-gold: #C5A25A;
+  --color-ivory: #F7F4EE;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  @apply bg-navy text-ivory antialiased;
+}
+
+.container-max {
+  @apply max-w-6xl mx-auto px-6;
+}
+
+.btn-primary {
+  @apply inline-flex items-center justify-center rounded-full bg-gold text-navy font-medium px-6 py-3 shadow-glow hover:opacity-95 transition;
+}
+
+.card {
+  @apply rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm shadow-lg;
+}
